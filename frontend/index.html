@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoftPrim Product Catalog</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>SoftPrim Product Catalog</h1>
+      <p>Browse products and filter them by category.</p>
+    </header>
+
+    <section class="filters">
+      <label for="categorySelect">Category</label>
+      <select id="categorySelect">
+        <option value="">Loading categories...</option>
+      </select>
+    </section>
+
+    <section id="statusContainer" class="status hidden"></section>
+
+    <section id="productsGrid" class="products-grid"></section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

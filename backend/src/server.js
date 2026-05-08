@@ -2,7 +2,7 @@ require("dotenv").config();
 const app = require("./app");
 const pool = require("./config/db");
 
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT) || 3001;
 
 async function startServer() {
   try {
@@ -11,7 +11,7 @@ async function startServer() {
     connection.release();
 
     app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}`);
+      console.log(`Server is running on http://127.0.0.1:${PORT}`);
     });
   } catch (error) {
     console.error("Failed to start server:", error.message);
